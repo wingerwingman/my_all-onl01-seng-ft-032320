@@ -1,3 +1,6 @@
+require_relative "../lib/my_all.rb"
+
+my_all?([1,2,3]) {|i| i < 4}
 
 def my_all?(collection)
   i = 0 
@@ -13,6 +16,3 @@ def my_all?(collection)
   end
 end
     
-require_relative "../lib/my_all.rb"
-
-my_all?([1,2,3]) {|i| i < 4}
